@@ -22,3 +22,13 @@ public:
     virtual ~RekeningBank() {}
 };
 
+class RekeningS : public RekeningBank {
+public:
+    RekeningS(string nama, int saldo) : RekeningBank(nama, saldo) {}
+
+    void potongAdmin() {
+        cout << "Rekening Syariah: tidak ada potongan admin" << endl;
+    }
+};
+
+
