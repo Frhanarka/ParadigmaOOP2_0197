@@ -12,4 +12,9 @@ public:
         this->saldo = saldo;
     }
 
-    
+    virtual void potongAdmin() = 0;
+
+    void tampilInfo() {
+        cout << "Nama  : " << nama << endl;
+        cout << "Saldo : Rp " << saldo << endl;
+    }
