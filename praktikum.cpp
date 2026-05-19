@@ -31,4 +31,14 @@ public:
     }
 };
 
+class RekeningK : public RekeningBank {
+public:
+    RekeningK(string nama, int saldo) : RekeningBank(nama, saldo) {}
+
+    void potongAdmin() {
+        saldo -= 15000;
+        cout << "Rekening Konvensional: dipotong Rp 15.000" << endl;
+    }
+};
+
 
