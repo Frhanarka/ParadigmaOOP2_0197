@@ -1,2 +1,9 @@
 #include <iostream>
-#include <string>
+using namespace std;
+
+class BaseClass final{
+public:
+    virtual void perkenalan() {
+        cout << "Halo saya function dari base class";
+    }
+};
