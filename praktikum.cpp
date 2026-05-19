@@ -55,5 +55,24 @@ public:
     }
 };
 
+int main() {
+    RekeningBank* rek[4];
+    rek[0] = new RekeningS("Ali", 5000000);
+    rek[1] = new RekeningK("Budi", 3000000);
+    rek[2] = new RekeningP("Citra", 12000000);
+    rek[3] = new RekeningP("Dina", 8000000);
+
+    cout << "=== Proses Akhir Bulan Bank Gibran Jaya ===" << endl;
+
+    for (int i = 0; i < 4; i++) {
+        cout << "\n";
+        rek[i]->tampilInfo();
+        rek[i]->potongAdmin();
+    }
+
+    for (int i = 0; i < 4; i++) delete rek[i];
+
+    return 0;
+}
 
 
