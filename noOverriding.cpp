@@ -9,3 +9,8 @@ public:
 }
 
 class derivedClass : public baseClass {
+public:
+    void perkenalan() override {
+        cout << "Halo saya function dari derived class";
+    }
+};
