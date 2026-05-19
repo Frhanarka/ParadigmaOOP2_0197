@@ -6,3 +6,6 @@ public:
     virtual void pesan() {
         cout << "pesan dari seseorang" << endl;
     }
+};
+
+class joko : public seseorang {
