@@ -6,11 +6,11 @@ public:
     virtual void perkenalan() {
         cout << "Halo saya function dari base class";
     }
-}
+};
 
 class derivedClass : public baseClass {
 public:
-    void perkenalan() override {
+    void perkenalan1() {
         cout << "Halo saya function dari derived class";
     }
 };
