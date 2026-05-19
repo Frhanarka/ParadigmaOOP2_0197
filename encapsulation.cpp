@@ -1,2 +1,5 @@
 #include <iostream>
-#usig namespace std;
+using namespace std;
+
+class remotelampu {
+private:
