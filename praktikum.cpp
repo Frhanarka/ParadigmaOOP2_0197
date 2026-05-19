@@ -18,3 +18,7 @@ public:
         cout << "Nama  : " << nama << endl;
         cout << "Saldo : Rp " << saldo << endl;
     }
+
+    virtual ~RekeningBank() {}
+};
+
