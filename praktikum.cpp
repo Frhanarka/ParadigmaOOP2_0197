@@ -41,4 +41,19 @@ public:
     }
 };
 
+class RekeningP : public RekeningBank {
+public:
+    RekeningP(string nama, int saldo) : RekeningBank(nama, saldo) {}
+
+    void potongAdmin() {
+        if (saldo > 10000000) {
+            cout << "Rekening Premium: saldo tinggi, bebas admin" << endl;
+        } else {
+            saldo -= 50000;
+            cout << "Rekening Premium: dipotong Rp 50.000" << endl;
+        }
+    }
+};
+
+
 
